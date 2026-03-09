@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Material & Ausrüstung</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Material">
+<meta name="theme-color" content="#0f172a">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwZTdhOGQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTNhNWYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0idXJsKCNnKSIvPjx0ZXh0IHg9IjI1NiIgeT0iMjAwIiBmb250LXNpemU9IjE0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4pqTPC90ZXh0Pjx0ZXh0IHg9IjI1NiIgeT0iMzUwIiBmb250LXNpemU9Ijc1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiPk1BVDwvdGV4dD48dGV4dCB4PSIyNTYiIHk9IjQyMCIgZm9udC1zaXplPSI0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjYpIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCI+QVVTUsOcU1RVTkc8L3RleHQ+PC9zdmc+">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwZTdhOGQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTNhNWYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0idXJsKCNnKSIvPjx0ZXh0IHg9IjI1NiIgeT0iMjAwIiBmb250LXNpemU9IjE0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4pqTPC90ZXh0Pjx0ZXh0IHg9IjI1NiIgeT0iMzUwIiBmb250LXNpemU9Ijc1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiPk1BVDwvdGV4dD48dGV4dCB4PSIyNTYiIHk9IjQyMCIgZm9udC1zaXplPSI0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjYpIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCI+QVVTUsOcU1RVTkc8L3RleHQ+PC9zdmc+">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f172a;
+    --bg2: #1e293b;
+    --bg3: #334155;
+    --card: rgba(30,41,59,0.85);
+    --card-border: rgba(56,189,248,0.12);
+    --accent: #38bdf8;
+    --accent2: #0ea5e9;
+    --accent-glow: rgba(56,189,248,0.25);
+    --green: #34d399;
+    --green-glow: rgba(52,211,153,0.25);
+    --red: #f87171;
+    --text: #f1f5f9;
+    --text2: #94a3b8;
+    --text3: #64748b;
+    --gold: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); height: 100vh; overflow: hidden; display: flex; flex-direction: column; max-width: 600px; margin: 0 auto; color: var(--text); }
+  
+  /* HEADER */
+  #header { 
+    background: linear-gradient(135deg, #0c4a6e 0%, #0e7a8d 50%, #155e75 100%);
+    padding: 14px 16px 12px; display: flex; align-items: center; justify-content: space-between;
+    box-shadow: 0 4px 24px rgba(14,122,141,0.4); flex-shrink: 0; position: relative; overflow: hidden;
+  }
+  #header::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat; }
+  #header-left { display: flex; align-items: center; gap: 10px; position: relative; z-index: 1; }
+  #header-logo { font-size: 26px; filter: drop-shadow(0 2px 8px rgba(56,189,248,0.5)); }
+  #header-title { color: #fff; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 17px; line-height: 1.2; letter-spacing: 0.5px; }
+  #header-sub { color: rgba(255,255,255,0.7); font-size: 10px; font-weight: 700; display:flex; align-items:center; gap:5px; }
+  #sync-dot { width: 7px; height: 7px; border-radius: 50%; background: #fca5a5; flex-shrink:0; transition: background 0.3s; }
+  #sync-dot.online { background: var(--green); animation: pulse 2s infinite; box-shadow: 0 0 8px var(--green-glow); }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  #header-right { display: flex; gap: 6px; flex-shrink:0; position: relative; z-index: 1; }
+  .header-btn { background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 20px; padding: 5px 11px; font-size: 11px; font-weight: 800; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+  .header-btn:active { transform: scale(0.95); }
+  .header-btn.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+  /* VOICE BAR */
+  #voice-bar { background: rgba(251,191,36,0.15); border-bottom: 2px solid var(--gold); padding: 7px 16px; display: none; align-items: center; gap: 9px; flex-shrink: 0; }
+  #voice-bar.show { display: flex; }
+  #vdot { width: 9px; height: 9px; border-radius: 50%; background: var(--red); animation: blink 0.8s infinite; }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  #vtext { color: var(--gold); font-weight: 700; font-size: 13px; }
+
+  /* TOAST */
+  #toast { position: fixed; top: 70px; left: 50%; transform: translateX(-50%); color: #fff; padding: 9px 22px; border-radius: 24px; font-size: 14px; font-weight: 800; z-index: 999; box-shadow: 0 4px 20px rgba(0,0,0,0.4); white-space: nowrap; pointer-events: none; display: none; backdrop-filter: blur(12px); }
+
+  /* OVERLAY / DIALOG */
+  #overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px); display: none; align-items: center; justify-content: center; z-index: 2000; }
+  #overlay.show { display: flex; }
+  #dialog { background: var(--bg2); border: 1px solid var(--card-border); border-radius: 20px; padding: 24px 20px; width: 82%; max-width: 320px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .dlg-title { font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 900; color: var(--text); margin-bottom: 5px; }
+  .dlg-sub { font-size: 13px; color: var(--text2); margin-bottom: 18px; }
+  .dlg-btns { display: flex; gap: 8px; margin-bottom: 10px; }
+  .dlg-btn { flex: 1; padding: 10px 4px; border-radius: 12px; border: none; font-weight: 800; font-size: 12px; cursor: pointer; font-family: inherit; transition: transform 0.15s; }
+  .dlg-btn:active { transform: scale(0.95); }
+  .dlg-gray { background: var(--bg3); color: var(--text); }
+  .dlg-red { background: var(--red); color: #fff; }
+  .dlg-cancel { width: 100%; padding: 9px; border-radius: 12px; border: none; background: none; color: var(--text3); font-weight: 700; font-size: 14px; cursor: pointer; font-family: inherit; }
+
+  /* MAIN */
+  #main { flex: 1; display: flex; flex-direction: column; overflow: hidden; padding-bottom: 80px; }
+  .tc { flex: 1; display: none; flex-direction: column; overflow: hidden; }
+  .tc.show { display: flex; }
+
+  /* SEARCH */
+  #search-bar { margin: 10px 14px 0; background: var(--bg2); border: 1px solid var(--card-border); border-radius: 14px; display: flex; align-items: center; padding: 9px 13px; flex-shrink: 0; }
+  #search-input { flex: 1; border: none; outline: none; font-size: 15px; font-family: inherit; background: transparent; color: var(--text); }
+  #search-input::placeholder { color: var(--text3); }
+  #search-clear { background: var(--bg3); color: var(--text2); border: none; border-radius: 50%; width: 22px; height: 22px; font-size: 11px; cursor: pointer; display: none; font-weight: 700; }
+
+  /* PILLS */
+  #pills-wrap { flex-shrink: 0; margin-top: 8px; }
+  #pills { display: flex; gap: 6px; padding: 0 14px 4px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  #pills::-webkit-scrollbar { display: none; }
+  .pill { flex-shrink: 0; background: var(--bg2); border: 1px solid var(--card-border); border-radius: 20px; padding: 6px 13px; font-size: 12px; font-weight: 800; color: var(--text2); cursor: pointer; font-family: inherit; white-space: nowrap; transition: all 0.2s; }
+  .pill:active { transform: scale(0.95); }
+  .pill.active { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+
+  /* EDIT BAR */
+  #edit-bar { margin: 8px 14px 0; display: none; flex-direction: column; gap: 7px; flex-shrink: 0; }
+  #edit-bar.show { display: flex; }
+  #edit-bar-row1 { display: flex; gap: 7px; }
+  #edit-select { flex: 0 0 auto; max-width: 140px; padding: 9px 6px; border-radius: 10px; border: 1px solid var(--card-border); font-size: 12px; font-family: inherit; background: var(--bg2); color: var(--text); }
+  #edit-input { flex: 1; padding: 9px 11px; border-radius: 10px; border: 1px solid var(--accent); font-size: 14px; font-family: inherit; outline: none; background: var(--bg2); color: var(--text); }
+  #edit-input::placeholder { color: var(--text3); }
+  #edit-add-btn { width: 100%; background: linear-gradient(135deg, var(--accent2), var(--accent)); color: var(--bg); border: none; border-radius: 10px; padding: 11px; font-size: 16px; font-weight: 900; cursor: pointer; letter-spacing: 0.05em; }
+
+  /* ITEMS SCROLL */
+  #items-scroll { flex: 1; overflow-y: auto; padding: 8px 14px 0; margin-top: 8px; -webkit-overflow-scrolling: touch; }
+  #items-scroll::-webkit-scrollbar { width: 4px; }
+  #items-scroll::-webkit-scrollbar-track { background: transparent; }
+  #items-scroll::-webkit-scrollbar-thumb { background: var(--bg3); border-radius: 4px; }
+  .cat-title { font-size: 11px; font-weight: 900; color: var(--text3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+  .cat-group { margin-bottom: 14px; }
+  .items-list { display: flex; flex-direction: column; gap: 3px; }
+  .item-row { display: flex; align-items: center; justify-content: space-between; background: var(--card); border: 1px solid transparent; border-radius: 12px; padding: 11px 13px; cursor: pointer; transition: all 0.2s; }
+  .item-row:active { transform: scale(0.98); }
+  .item-row.added { background: rgba(52,211,153,0.1); border-color: rgba(52,211,153,0.3); }
+  .item-name { font-size: 15px; color: var(--text); font-weight: 600; flex: 1; }
+  .item-circle { width: 28px; height: 28px; border-radius: 50%; background: var(--bg3); color: var(--text3); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 900; flex-shrink: 0; transition: all 0.2s; }
+  .item-circle.added { background: var(--green); color: var(--bg); box-shadow: 0 0 12px var(--green-glow); }
+  .item-del { background: rgba(248,113,113,0.15); border: none; border-radius: 8px; padding: 4px 9px; font-size: 14px; cursor: pointer; color: var(--red); }
+  .cat-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+  .cat-add-btn { background: rgba(56,189,248,0.15); border: 1px solid rgba(56,189,248,0.3); border-radius: 50%; width: 24px; height: 24px; font-size: 16px; font-weight: 900; color: var(--accent); cursor: pointer; display: flex; align-items: center; justify-content: center; line-height: 1; flex-shrink: 0; transition: all 0.2s; }
+  .cat-add-btn:active { transform: scale(0.9); }
+  .inline-add { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; background: rgba(56,189,248,0.08); border-radius: 12px; padding: 10px; border: 1px solid rgba(56,189,248,0.2); }
+  .inline-add input { width: 100%; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--accent); font-size: 16px; font-family: inherit; outline: none; background: var(--bg2); color: var(--text); }
+  .inline-add input::placeholder { color: var(--text3); }
+  .inline-add button { width: 100%; background: linear-gradient(135deg, var(--accent2), var(--accent)); color: var(--bg); border: none; border-radius: 10px; padding: 12px; font-size: 16px; font-weight: 900; cursor: pointer; letter-spacing: 0.05em; }
+
+  /* LISTE */
+  #liste-scroll { flex: 1; overflow-y: auto; padding: 12px 14px 0; -webkit-overflow-scrolling: touch; }
+  .empty-box { text-align: center; padding-top: 60px; }
+  .ls-title { font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 8px; }
+  .ls-title.offen { color: var(--accent); }
+  .ls-title.erl { color: var(--text3); margin-top: 16px; }
+  .li { display: flex; align-items: center; gap: 11px; background: var(--card); border: 1px solid var(--card-border); border-radius: 14px; padding: 12px 14px; margin-bottom: 6px; transition: all 0.2s; }
+  .li.erl { opacity: 0.45; }
+  .cb { width: 26px; height: 26px; border-radius: 8px; border: 2px solid var(--text3); background: transparent; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 900; color: #fff; transition: all 0.2s; }
+  .cb.checked { background: var(--green); border-color: var(--green); box-shadow: 0 0 10px var(--green-glow); }
+  .ln { flex: 1; font-size: 16px; font-weight: 700; color: var(--text); }
+  .ln.done { text-decoration: line-through; color: var(--text3); }
+  .lt { font-size: 13px; }
+  .ldel { background: none; border: none; color: var(--text3); font-size: 20px; cursor: pointer; font-weight: 900; line-height: 1; padding: 0 4px; }
+
+  /* TAB BAR */
+  #tab-bar { 
+    position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 600px;
+    background: linear-gradient(180deg, var(--bg2) 0%, rgba(15,23,42,0.98) 100%);
+    border-top: 1px solid var(--card-border); display: flex; align-items: flex-end;
+    padding: 4px 0 10px; box-shadow: 0 -4px 24px rgba(0,0,0,0.4); z-index: 100;
+  }
+  .tb { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 1px; background: none; border: none; cursor: pointer; padding: 4px 0; position: relative; }
+  .tb .ti { font-size: 21px; transition: transform 0.2s; }
+  .tb:active .ti { transform: scale(1.2); }
+  .tb .tl { font-size: 9px; font-weight: 800; color: var(--text3); letter-spacing: 0.02em; }
+  .tb.active .tl { color: var(--accent); }
+  .tind { position: absolute; bottom: -10px; width: 24px; height: 3px; background: var(--accent); border-radius: 2px; display: none; box-shadow: 0 0 8px var(--accent-glow); }
+  .tb.active .tind { display: block; }
+  .tbadge { position: absolute; top: -2px; right: 8%; background: var(--red); color: #fff; border-radius: 10px; font-size: 9px; font-weight: 900; padding: 1px 5px; min-width: 16px; text-align: center; display: none; }
+  #mic-wrap { width: 56px; display: flex; align-items: flex-end; justify-content: center; flex-shrink: 0; }
+  #mic-btn { 
+    width: 50px; height: 50px; background: linear-gradient(135deg, var(--accent2), var(--accent));
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 22px; box-shadow: 0 4px 18px var(--accent-glow); cursor: pointer;
+    margin-bottom: 2px; transition: all 0.2s;
+  }
+  #mic-btn:active { transform: scale(0.92); }
+  #mic-btn.active { background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 4px 18px rgba(239,68,68,0.5); transform: scale(1.1); }
+
+  /* Tab type icons in list */
+  .typ-lm { }
+  .typ-hh { }
+  .typ-kl { }
+  .typ-schiff { }
+  .typ-womo { }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <div id="header-left">
+    <span id="header-logo">⚓</span>
+    <div>
+      <div id="header-title">Material & Ausrüstung</div>
+      <div id="header-sub"><span id="sync-dot"></span><span id="sync-text">Verbinde…</span></div>
+    </div>
+  </div>
+  <div id="header-right">
+    <button class="header-btn" id="edit-btn" onclick="toggleEdit()" style="display:none;">✏️ Edit</button>
+    <button class="header-btn" id="clear-btn" onclick="showClearDlg()" style="display:none;">🗑️</button>
+  </div>
+</div>
+
+<div id="voice-bar"><div id="vdot"></div><span id="vtext">Höre zu…</span></div>
+<div id="toast"></div>
+
+<div id="overlay">
+  <div id="dialog">
+    <div class="dlg-title">Liste leeren?</div>
+    <div class="dlg-sub">Was soll gelöscht werden?</div>
+    <div class="dlg-btns">
+      <button class="dlg-btn dlg-gray" onclick="clearErl()">Nur Erledigte (<span id="erl-cnt">0</span>)</button>
+      <button class="dlg-btn dlg-red" onclick="clearAll()">Alles löschen</button>
+    </div>
+    <button class="dlg-cancel" onclick="hideDlg()">Abbrechen</button>
+  </div>
+</div>
+
+<div id="main">
+  <div id="tab-auswahl" class="tc show">
+    <div id="search-bar">
+      <span style="font-size:15px;margin-right:8px;opacity:0.5;">🔍</span>
+      <input type="text" id="search-input" placeholder="Artikel suchen…" oninput="onSearch(this.value)">
+      <button id="search-clear" onclick="clearSearch()">✕</button>
+    </div>
+    <div id="pills-wrap"><div id="pills"></div></div>
+    <div id="edit-bar">
+      <div id="edit-bar-row1">
+        <select id="edit-select"></select>
+        <input type="text" id="edit-input" placeholder="Neuer Artikel…" onkeydown="if(event.key==='Enter')addToSrc()">
+      </div>
+      <button id="edit-add-btn" onclick="addToSrc()">+ Artikel speichern</button>
+    </div>
+    <div id="items-scroll"></div>
+  </div>
+  <div id="tab-liste" class="tc">
+    <div id="liste-scroll">
+      <div id="empty-box" class="empty-box">
+        <div style="font-size:64px;margin-bottom:14px;">⚓</div>
+        <div style="font-size:20px;font-weight:900;color:var(--text);margin-bottom:8px;">Liste ist leer</div>
+        <div style="font-size:14px;color:var(--text3);line-height:1.7;">Wähle eine Kategorie und<br>tippe Artikel an zum Hinzufügen</div>
+      </div>
+      <div id="liste-inhalt" style="display:none;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="tab-bar">
+  <button class="tb active" id="btn-lm" onclick="setTab('lm')">
+    <span class="ti">🥕</span><span class="tl">Lebensmittel</span><div class="tind"></div>
+  </button>
+  <button class="tb" id="btn-hh" onclick="setTab('hh')">
+    <span class="ti">🏠</span><span class="tl">Haushalt</span><div class="tind"></div>
+  </button>
+  <button class="tb" id="btn-kl" onclick="setTab('kl')">
+    <span class="ti">👕</span><span class="tl">Kleidung</span><div class="tind"></div>
+  </button>
+  <button class="tb" id="btn-schiff" onclick="setTab('schiff')">
+    <span class="ti">⛵</span><span class="tl">Schiff</span><div class="tind"></div>
+  </button>
+  <button class="tb" id="btn-womo" onclick="setTab('womo')">
+    <span class="ti">🚐</span><span class="tl">Womo</span><div class="tind"></div>
+  </button>
+  <div id="mic-wrap"><div id="mic-btn" onclick="toggleMic()">🎤</div></div>
+  <button class="tb" id="btn-liste" onclick="setTab('liste')">
+    <span class="ti">📋</span><span class="tl" id="liste-lbl">Liste</span>
+    <div class="tind"></div><span class="tbadge" id="badge">0</span>
+  </button>
+</div>
+
+<!-- Firebase Compat SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
+<script>
+// Firebase Init
+firebase.initializeApp({
+  apiKey: "AIzaSyBUHOr2dM2H-sUnhNODoVSerM224vPsC_E",
+  authDomain: "einkaufsliste-98199.firebaseapp.com",
+  databaseURL: "https://einkaufsliste-98199-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "einkaufsliste-98199",
+  storageBucket: "einkaufsliste-98199.firebasestorage.app",
+  messagingSenderId: "411877213047",
+  appId: "1:411877213047:web:f04e3b9b98a8d97120d772"
+});
+var db = firebase.database();
+
+// ====================== DEFAULT DATA ======================
+var DEF_LM = {
+  "🍎 Obst": ["Äpfel","Bananen","Orangen","Zitronen","Limetten","Erdbeeren","Himbeeren","Blaubeeren","Kirschen","Trauben","Pfirsiche","Nektarinen","Pflaumen","Birnen","Mangos","Ananas","Melone","Wassermelone","Kiwi","Papaya","Feigen","Datteln","Avocados","Granatapfel"],
+  "🥦 Gemüse": ["Tomaten","Gurken","Paprika rot","Paprika gelb","Paprika grün","Zucchini","Auberginen","Brokkoli","Blumenkohl","Rosenkohl","Wirsing","Weißkohl","Rotkohl","Kohlrabi","Möhren","Sellerie","Fenchel","Lauch","Zwiebeln","Rote Zwiebeln","Knoblauch","Ingwer","Kartoffeln","Süßkartoffeln","Rote Beete","Radieschen","Spinat","Mangold","Rucola","Eisbergsalat","Feldsalat","Kopfsalat","Spargel","Champignons","Erbsen","Bohnen","Maiskolben","Kürbis","Pastinaken"],
+  "🥩 Fleisch": ["Hähnchenbrustfilet","Hähnchenschenkel","Ganzes Hähnchen","Rinderhackfleisch","Rindersteak","Rinderbraten","Rindergulasch","Schweinehackfleisch","Schweinefilet","Schweinebraten","Schweineschnitzel","Kotelett","Lammkeule","Truthahn","Speck","Kochschinken","Salami","Chorizo","Bratwurst","Mettenden","Leberwurst"],
+  "🐟 Fisch & Meer": ["Lachs","Thunfisch","Kabeljau","Forelle","Hering","Makrele","Seelachs","Shrimps","Garnelen","Muscheln","Tintenfisch","Krabben","Scholle","Zander"],
+  "🥛 Milch & Käse": ["Vollmilch","Fettarme Milch","Hafermilch","Mandelmilch","Sojamilch","Butter","Margarine","Joghurt","Griechischer Joghurt","Quark","Frischkäse","Ricotta","Mozzarella","Gouda","Emmentaler","Cheddar","Parmesan","Feta","Brie","Camembert","Schlagsahne","Saure Sahne","Crème fraîche","Eier","Schmand"],
+  "🍞 Brot & Backen": ["Vollkornbrot","Weißbrot","Roggenbrot","Toastbrot","Baguette","Ciabatta","Brötchen","Laugenbrötchen","Croissants","Mehl Type 405","Mehl Type 550","Vollkornmehl","Roggenmehl","Hefe","Backpulver","Natron","Speisestärke"],
+  "🌾 Getreide & Hülsen": ["Reis","Vollkornreis","Basmati","Jasminreis","Nudeln","Vollkornnudeln","Spätzle","Gnocchi","Couscous","Bulgur","Quinoa","Haferflocken","Müsli","Linsen rote","Linsen braune","Kichererbsen","Weiße Bohnen","Kidneybohnen","Schwarze Bohnen","Polenta"],
+  "🧄 Gewürze & Öle": ["Olivenöl","Sonnenblumenöl","Rapsöl","Kokosöl","Sesamöl","Essig","Balsamico","Salz","Pfeffer","Paprikapulver süß","Paprikapulver scharf","Kurkuma","Kreuzkümmel","Koriander","Zimt","Muskatnuss","Oregano","Basilikum","Thymian","Rosmarin","Lorbeer","Chili","Currypulver","Senf","Ketchup","Mayonnaise","Sojasauce","Tomatenmark","Passierte Tomaten","Kokosmilch"],
+  "🥤 Getränke": ["Mineralwasser","Stilles Wasser","Apfelsaft","Orangensaft","Multivitaminsaft","Kaffee","Espresso","Schwarztee","Kamillentee","Pfefferminztee","Grüner Tee","Kakao","Rotwein","Weißwein","Sekt","Bier"],
+  "🍯 Süßes & Aufstriche": ["Zucker","Puderzucker","Honig","Ahornsirup","Marmelade Erdbeere","Marmelade Aprikose","Nuss-Nougat-Creme","Erdnussbutter","Mandelmuss","Schokolade dunkel","Schokolade Milch","Vanillezucker"],
+  "🧊 Tiefkühl": ["TK Erbsen","TK Mais","TK Spinat","TK Brokkoli","TK Gemüsemischung","TK Beeren","TK Fischfilet","TK Garnelen","TK Kräuter"]
+};
+
+var DEF_HH = {
+  "🧻 Papier & Folie": ["Toilettenpapier","Küchenpapier","Taschentücher","Frischhaltefolie","Alufolie","Backpapier","Gefrierbeutel","Ziplock-Beutel","Müllbeutel 10L","Müllbeutel 35L","Müllbeutel 60L","Müllbeutel 120L"],
+  "🧹 Reinigung Küche": ["Spülmittel","Spülmaschinentabs","Spülmaschinensalz","Klarspüler","Backofenreiniger","Entkalker","Schwämme","Topfreiniger","Scheuermilch","Mikrofasertücher"],
+  "🫧 Wäsche & Bad": ["Waschmittel","Weichspüler","Fleckentferner","Allzweckreiniger","Badreiniger","WC-Reiniger","WC-Steine","Glasreiniger","Essigreiniger","Abflussreiniger"],
+  "🪥 Körperpflege": ["Zahnpasta","Zahnbürsten","Zahnseide","Mundwasser","Shampoo","Haarspülung","Duschgel","Flüssigseife","Seife","Deo","Rasierklingen","Rasierschaum","Aftershave","Gesichtscreme","Bodylotion","Sonnencreme","Lippenbalsam","Wattepads","Wattestäbchen","Damenbinden","Tampons"],
+  "🏠 Haushalt & Diverses": ["Batterien AA","Batterien AAA","Batterien 9V","Glühbirnen E27","Glühbirnen E14","Kerzen","Streichhölzer","Klebeband","Isolierband","Heftpflaster","Desinfektionsmittel","Frischhaltedosen"]
+};
+
+var DEF_KL = {
+  "👕 Oberbekleidung": ["T-Shirts","Poloshirts","Hemden","Blusen","Pullover","Hoodie","Sweatshirt","Fleecejacke","Softshell-Jacke","Regenjacke","Windbreaker","Winterjacke","Daunenjacke","Weste","Strickjacke","Funktionsshirt","Tank Top"],
+  "👖 Unterbekleidung & Hosen": ["Jeans","Chinos","Shorts","Cargohose","Jogginghose","Leggings","Stoffhose","Badeshorts","Unterhosen","Boxershorts","Unterhemden","Slips","BH","Sport-BH","Socken","Wollsocken","Funktionssocken","Strumpfhosen"],
+  "👟 Schuhe": ["Sneaker","Wanderschuhe","Segelschuhe","Sandalen","Flip-Flops","Gummistiefel","Wasserschuhe","Laufschuhe","Halbschuhe","Pantoffeln","Crocs"],
+  "🧢 Accessoires": ["Sonnenhut","Mütze","Stirnband","Cap","Sonnenbrille","Gürtel","Schal","Handschuhe","Buff/Multituch","Rucksack","Tasche","Geldbörse","Uhr"],
+  "🌊 Bademode & Sport": ["Badehose","Badeanzug","Bikini","Neoprenanzug","Rashguard","Sporttights","Sportshorts","Regenponcho","UV-Shirt"],
+  "🧥 Spezial & Outdoor": ["Segelhandschuhe","Ölzeug/Segeljacke","Segelhose","Thermounterwäsche oben","Thermounterwäsche unten","Skibrille","Schlafanzug","Bademantel","Gamaschen"]
+};
+
+var DEF_SCHIFF = {
+  "🔧 Werkzeug": ["Schraubendreher-Set","Inbusschlüssel-Set","Maulschlüssel-Set","Zange","Seitenschneider","Kombizange","Gripzange","Hammer","Multitool","Säge (klein)","Feilen-Set","Schmirgelpapier","Bohrmaschine Akku","Bits-Set","Spannungsprüfer","Kabelmesser","Abisolierzange","Crimpzange","Lötkolben","Lötzinn","Kabelbinder diverse","Isolierband","Duct Tape","Dichtmasse/Sikaflex","Epoxidharz","GFK-Reparatur-Set"],
+  "⚓ Deck & Rigging": ["Schäkel diverse","Splinte","Bolzen","Wantenspanner","Blöcke/Rollen","Klemmen/Curryklemmen","Leinen/Tauwerk 8mm","Leinen/Tauwerk 10mm","Leinen/Tauwerk 12mm","Festmacher","Fender","Fenderleinen","Anker Ersatz","Ankerkette","Ankerwirbel","Ankerschäkel","Rettungsring","Rettungsweste","Sicherheitsleine/Lifeline","Strickleiter"],
+  "🛠️ Bordtechnik": ["Sicherungen diverse","Kabel 1,5mm²","Kabel 2,5mm²","Kabel 4mm²","Kabelschuhe","LED-Birnen 12V","Schalter","Pumpe Ersatz","Impeller","Keilriemen","Motoröl","Getriebeöl","Ölfilter","Kraftstofffilter","Zündkerzen","Kühlmittel","Zinkanoden","Wasserpumpe","Bilgepumpe","Schlauchklemmen"],
+  "🧭 Navigation & Sicherheit": ["Seekarten","Kompass","Fernglas","GPS Handheld","Signalraketen","Nebelhorn","Seenotsender EPIRB","Taschenlampe wasserdicht","Stirnlampe","Erste-Hilfe-Kasten","Seekrankheit Tabletten","Logbuch","Flaggen-Set","Radar-Reflektor"],
+  "🧴 Pflege & Reinigung": ["Antifouling","Bootslack","Politur","Teakpflege/Teaköl","Edelstahlreiniger","Cockpitreiniger","Schleifpapier nass","Pinsel/Roller","Abklebeband","Grundierung","Aceton","Reinigungsmittel Deck","Schwamm/Schrubber"],
+  "🪢 Material & Ersatzteile": ["Schrauben V4A Set","Muttern V4A Set","Unterlegscheiben V4A","Nieten","Dichtungen diverse","O-Ringe Set","Schlauch 13mm","Schlauch 19mm","Schlauchverbinder","Absperrhahn","Plexiglas","GFK-Matte","Alu-Profil","Teakholz","Laminierrolle"]
+};
+
+var DEF_WOMO = {
+  "🔧 Werkzeug": ["Schraubendreher-Set","Inbusschlüssel-Set","Maulschlüssel-Set","Zange","Seitenschneider","Kombizange","Hammer","Multitool","Knarre mit Nüssen","Drehmomentschlüssel","Wagenheber","Radkreuz","Abschleppseil","Starthilfekabel","Reifenreparatur-Set","Kabelbinder","Isolierband","Duct Tape","Panzertape","Silikon","WD-40","Kontaktspray"],
+  "⚡ Elektrik & Technik": ["Sicherungen KFZ Set","Kabel 1,5mm²","Kabel 2,5mm²","Kabelschuhe","LED-Birnen 12V","Adapter CEE/Schuko","Verlängerungskabel 25m","Solarladeregler","Wechselrichter","USB-Ladegerät","Multimeter","Batterie-Ladegerät","Landstromkabel","Auffahrkeile/Leveller"],
+  "💧 Wasser & Gas": ["Wasserschlauch","Wasserfilter","Wasserentkeimer","Aqua Kem Blue","Aqua Rinse","Dichtungen Wasserhahn","Tauchpumpe Ersatz","Gasschlauch","Gasdruckregler","Gasflasche 5kg","Gasflasche 11kg","Camping-Gaskocher"],
+  "🏕️ Camping & Komfort": ["Campingstühle","Campingtisch","Markise Ersatzteile","Vorzelt/Sonnensegel","Heringe","Abspannleinen","Outdoor-Teppich","Grill","Grillkohle","Campinggeschirr","Thermoskanne","Kühlbox","Aufbewahrungsboxen"],
+  "🧰 Ersatzteile Fahrzeug": ["Motoröl","Ölfilter","Luftfilter","Kraftstofffilter","Bremsflüssigkeit","Kühlmittel","Scheibenwischwasser","Scheibenwischer","Glühbirnen H7","Glühbirnen H4","Keilriemen","Auspuffpaste","Dichtmasse","Türscharniere","Gasfeder Heckklappen","Toilettendichtung"],
+  "🧴 Pflege & Reinigung": ["Fahrzeugreiniger","Felgenreiniger","Politur","Wachs","Fensterdichtungspflege","Gummipflege","Kunststoffpflege","Mikrofasertücher","Schwamm","Besen","Handfeger","Schaufel","Fußmatte"]
+};
+
+// ====================== STATE ======================
+var TABS = ['lm','hh','kl','schiff','womo','liste'];
+var TAB_KEYS = {lm:'lmData',hh:'hhData',kl:'klData',schiff:'schiffData',womo:'womoData'};
+var TAB_DEFAULTS = {lm:DEF_LM,hh:DEF_HH,kl:DEF_KL,schiff:DEF_SCHIFF,womo:DEF_WOMO};
+var TAB_ICONS = {lm:'🥕',hh:'🏠',kl:'👕',schiff:'⛵',womo:'🚐',custom:'📝'};
+
+var curTab='lm', aktivKat=null, editOn=false, listening=false, rec=null;
+var allData = {
+  lm: JSON.parse(JSON.stringify(DEF_LM)),
+  hh: JSON.parse(JSON.stringify(DEF_HH)),
+  kl: JSON.parse(JSON.stringify(DEF_KL)),
+  schiff: JSON.parse(JSON.stringify(DEF_SCHIFF)),
+  womo: JSON.parse(JSON.stringify(DEF_WOMO))
+};
+var liste = [];
+
+// ====================== FIREBASE LISTENERS ======================
+db.ref('liste').on('value', function(snap){
+  liste = snap.val() ? Object.values(snap.val()) : [];
+  if(curTab==='liste') renderListe(); else renderAuswahl();
+  updateBadge();
+  setSync(true);
+}, function(){ setSync(false); });
+
+Object.keys(TAB_KEYS).forEach(function(tab){
+  var key = TAB_KEYS[tab];
+  db.ref(key).on('value', function(snap){
+    if(snap.val()){ allData[tab]=snap.val(); if(curTab===tab) renderAuswahl(); }
+    else db.ref(key).set(TAB_DEFAULTS[tab]);
+  });
+});
+
+function setSync(ok){
+  document.getElementById('sync-dot').className = ok?'online':'';
+  document.getElementById('sync-text').textContent = ok?'Echtzeit-Sync aktiv ✓':'Offline…';
+}
+function saveListeFB(l){ liste=l; var o={}; l.forEach(function(i){o[i.id]=i;}); db.ref('liste').set(o); }
+function saveDataFB(tab, d){ allData[tab]=d; db.ref(TAB_KEYS[tab]).set(d); }
+
+// ====================== TOAST ======================
+var tt;
+function toast(msg,typ){
+  var t=document.getElementById('toast');
+  t.textContent=msg;
+  t.style.background=typ==='err'?'rgba(248,113,113,0.9)':typ==='info'?'rgba(56,189,248,0.9)':'rgba(52,211,153,0.9)';
+  t.style.display='block'; clearTimeout(tt);
+  tt=setTimeout(function(){t.style.display='none';},2200);
+}
+
+// ====================== TAB ======================
+function setTab(tab){
+  curTab=tab; editOn=false; aktivKat=null;
+  document.getElementById('search-input').value='';
+  document.getElementById('tab-auswahl').classList.toggle('show',tab!=='liste');
+  document.getElementById('tab-liste').classList.toggle('show',tab==='liste');
+  TABS.forEach(function(id){
+    document.getElementById('btn-'+id).classList.toggle('active', id===tab);
+  });
+  document.getElementById('edit-btn').style.display=tab==='liste'?'none':'';
+  document.getElementById('edit-btn').textContent='✏️ Edit';
+  document.getElementById('edit-btn').classList.remove('active');
+  document.getElementById('edit-bar').classList.remove('show');
+  if(tab!=='liste') renderAuswahl(); else renderListe();
+  updateBadge();
+}
+
+// ====================== RENDER AUSWAHL ======================
+function renderAuswahl(){
+  var data=allData[curTab];
+  if(!data) return;
+  var cats=Object.keys(data);
+  var suche=document.getElementById('search-input').value.toLowerCase();
+  var pillsEl=document.getElementById('pills'); pillsEl.innerHTML='';
+  var ap=document.createElement('button'); ap.className='pill'+(aktivKat===null?' active':''); ap.textContent='Alle';
+  ap.onclick=function(){aktivKat=null;renderAuswahl();}; pillsEl.appendChild(ap);
+  cats.forEach(function(cat){
+    var p=document.createElement('button'); p.className='pill'+(aktivKat===cat?' active':''); p.textContent=cat;
+    p.onclick=function(){aktivKat=aktivKat===cat?null:cat;document.getElementById('search-input').value='';renderAuswahl();}; pillsEl.appendChild(p);
+  });
+  var sel=document.getElementById('edit-select'); sel.innerHTML='';
+  cats.forEach(function(c){var o=document.createElement('option');o.value=c;o.textContent=c;if(aktivKat===c)o.selected=true;sel.appendChild(o);});
+  var scroll=document.getElementById('items-scroll'); scroll.innerHTML='';
+  var catsList=(aktivKat?[aktivKat]:cats);
+  catsList.forEach(function(cat,catIdx){
+    var items=(data[cat]||[]).filter(function(i){return i.toLowerCase().includes(suche);}).sort(function(a,b){return a.localeCompare(b,'de');});
+    if(!items.length) return;
+    var g=document.createElement('div'); g.className='cat-group';
+    var header=document.createElement('div'); header.className='cat-header';
+    var addBtn=document.createElement('button'); addBtn.className='cat-add-btn'; addBtn.textContent='+';
+    addBtn.title='Artikel hinzufügen';
+    (function(c){ addBtn.onclick=function(e){ e.stopPropagation(); toggleInlineAdd(c); }; })(cat);
+    header.appendChild(addBtn);
+    var t=document.createElement('div'); t.className='cat-title'; t.textContent=cat; header.appendChild(t);
+    g.appendChild(header);
+    var inlineDiv=document.createElement('div'); inlineDiv.className='inline-add'; inlineDiv.id='inline-'+catIdx; inlineDiv.style.display='none';
+    var inpEl=document.createElement('input'); inpEl.type='text'; inpEl.placeholder='Neuer Artikel…';
+    var saveBtn=document.createElement('button'); saveBtn.textContent='✓';
+    (function(c,inp){ saveBtn.onclick=function(){ saveInlineItem(c,inp); }; inpEl.onkeydown=function(e){ if(e.key==='Enter') saveInlineItem(c,inp); }; })(cat, inpEl);
+    inlineDiv.appendChild(inpEl); inlineDiv.appendChild(saveBtn); g.appendChild(inlineDiv);
+    var l=document.createElement('div'); l.className='items-list';
+    items.forEach(function(item){
+      var added=liste.some(function(i){return i.name.toLowerCase()===item.toLowerCase();});
+      var row=document.createElement('div'); row.className='item-row'+(added?' added':'');
+      var nm=document.createElement('span'); nm.className='item-name'; nm.textContent=item; row.appendChild(nm);
+      if(editOn){
+        var d=document.createElement('button'); d.className='item-del'; d.textContent='🗑️';
+        d.onclick=function(e){e.stopPropagation();delFromSrc(cat,item);}; row.appendChild(d);
+      } else {
+        var c=document.createElement('div'); c.className='item-circle'+(added?' added':''); c.textContent=added?'✓':'+'; row.appendChild(c);
+        row.onclick=function(){if(added)removeByName(item);else addItem(item);};
+      }
+      l.appendChild(row);
+    });
+    g.appendChild(l); scroll.appendChild(g);
+  });
+}
+
+// ====================== RENDER LISTE ======================
+function renderListe(){
+  var offen=liste.filter(function(i){return !i.erledigt;});
+  var erl=liste.filter(function(i){return i.erledigt;});
+  document.getElementById('clear-btn').style.display=liste.length>0?'':'none';
+  if(!liste.length){document.getElementById('empty-box').style.display='block';document.getElementById('liste-inhalt').style.display='none';return;}
+  document.getElementById('empty-box').style.display='none'; document.getElementById('liste-inhalt').style.display='block';
+  var inhalt=document.getElementById('liste-inhalt'); inhalt.innerHTML='';
+  if(offen.length){var t=document.createElement('div');t.className='ls-title offen';t.textContent='Noch besorgen — '+offen.length;inhalt.appendChild(t);offen.forEach(function(i){inhalt.appendChild(mkLI(i));});}
+  if(erl.length){var t2=document.createElement('div');t2.className='ls-title erl';t2.textContent='Erledigt — '+erl.length;inhalt.appendChild(t2);erl.forEach(function(i){inhalt.appendChild(mkLI(i));});}
+  var s=document.createElement('div');s.style.height='16px';inhalt.appendChild(s);
+}
+
+function mkLI(item){
+  var row=document.createElement('div'); row.className='li'+(item.erledigt?' erl':'');
+  var cb=document.createElement('div'); cb.className='cb'+(item.erledigt?' checked':''); cb.textContent=item.erledigt?'✓':'';
+  cb.onclick=function(){abhaken(item.id);}; row.appendChild(cb);
+  var nm=document.createElement('span'); nm.className='ln'+(item.erledigt?' done':''); nm.textContent=item.name; row.appendChild(nm);
+  var tp=document.createElement('span'); tp.className='lt'; tp.textContent=TAB_ICONS[item.typ]||'📝'; row.appendChild(tp);
+  var dl=document.createElement('button'); dl.className='ldel'; dl.textContent='×'; dl.onclick=function(){delFromListe(item.id);}; row.appendChild(dl);
+  return row;
+}
+
+function updateBadge(){
+  var offen=liste.filter(function(i){return !i.erledigt;});
+  var b=document.getElementById('badge'); b.textContent=offen.length; b.style.display=offen.length>0?'block':'none';
+  document.getElementById('liste-lbl').textContent=offen.length>0?'Liste ('+offen.length+')':'Liste';
+  document.getElementById('clear-btn').style.display=liste.length>0?'':'none';
+}
+
+// ====================== ACTIONS ======================
+function addItem(name){
+  if(liste.find(function(i){return i.name.toLowerCase()===name.toLowerCase();})){toast('"'+name+'" bereits drauf!','info');return;}
+  saveListeFB(liste.concat([{id:'id_'+Date.now()+'_'+Math.random().toString(36).substr(2,4),name:name,typ:curTab,erledigt:false}]));
+  toast('✓ '+name+' hinzugefügt');
+}
+function removeByName(name){
+  saveListeFB(liste.filter(function(i){return i.name.toLowerCase()!==name.toLowerCase();}));
+  toast('✗ '+name+' entfernt','info');
+}
+function abhaken(id){saveListeFB(liste.map(function(i){return i.id===id?Object.assign({},i,{erledigt:!i.erledigt}):i;}));}
+function delFromListe(id){saveListeFB(liste.filter(function(i){return i.id!==id;}));}
+function delFromSrc(cat,name){
+  var d=JSON.parse(JSON.stringify(allData[curTab]));
+  d[cat]=d[cat].filter(function(i){return i!==name;});
+  saveDataFB(curTab,d);
+}
+function addToSrc(){
+  var nm=document.getElementById('edit-input').value.trim();
+  var cat=document.getElementById('edit-select').value; if(!nm) return;
+  var d=JSON.parse(JSON.stringify(allData[curTab]));
+  d[cat]=(d[cat]||[]).concat([nm]);
+  saveDataFB(curTab,d);
+  document.getElementById('edit-input').value=''; toast('"'+nm+'" gespeichert ✓');
+}
+function toggleEdit(){
+  editOn=!editOn;
+  var b=document.getElementById('edit-btn'); b.textContent=editOn?'✓ Fertig':'✏️ Edit'; b.classList.toggle('active',editOn);
+  document.getElementById('edit-bar').classList.toggle('show',editOn); renderAuswahl();
+}
+function onSearch(val){document.getElementById('search-clear').style.display=val?'flex':'none';if(val)aktivKat=null;renderAuswahl();}
+function clearSearch(){document.getElementById('search-input').value='';document.getElementById('search-clear').style.display='none';renderAuswahl();}
+function showClearDlg(){document.getElementById('erl-cnt').textContent=liste.filter(function(i){return i.erledigt;}).length;document.getElementById('overlay').classList.add('show');}
+function hideDlg(){document.getElementById('overlay').classList.remove('show');}
+function clearErl(){saveListeFB(liste.filter(function(i){return !i.erledigt;}));hideDlg();toast('Erledigte gelöscht ✓');}
+function clearAll(){saveListeFB([]);hideDlg();toast('Liste geleert 🗑️');}
+
+// ====================== MIC ======================
+function toggleMic(){
+  if(listening){if(rec)rec.stop();return;}
+  var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!SR){toast('Sprache nicht verfügbar','err');return;}
+  rec=new SR(); rec.lang='de-DE'; rec.interimResults=true; var last='';
+  rec.onstart=function(){listening=true;document.getElementById('mic-btn').classList.add('active');document.getElementById('voice-bar').classList.add('show');document.getElementById('vtext').textContent='Höre zu…';};
+  rec.onresult=function(e){var t=Array.from(e.results).map(function(r){return r[0].transcript;}).join('');document.getElementById('vtext').textContent=t;last=t;};
+  rec.onend=function(){listening=false;document.getElementById('mic-btn').classList.remove('active');document.getElementById('voice-bar').classList.remove('show');if(last.trim())doVoice(last.trim());};
+  rec.onerror=function(){listening=false;document.getElementById('mic-btn').classList.remove('active');document.getElementById('voice-bar').classList.remove('show');toast('Mikrofon-Fehler','err');};
+  rec.start();
+}
+function doVoice(text){
+  var alle=[];
+  Object.keys(allData).forEach(function(tab){
+    Object.values(allData[tab]).forEach(function(items){
+      items.forEach(function(n){ alle.push({name:n,typ:tab}); });
+    });
+  });
+  var low=text.toLowerCase();
+  var tr=alle.find(function(i){return low.includes(i.name.toLowerCase());});
+  if(tr){var p=curTab;curTab=tr.typ;addItem(tr.name);curTab=p;}
+  else{saveListeFB(liste.concat([{id:'id_'+Date.now(),name:text,typ:'custom',erledigt:false}]));toast('✓ "'+text+'" hinzugefügt');}
+}
+
+// ====================== INLINE ADD ======================
+var openInline = null;
+function toggleInlineAdd(cat) {
+  var data2=allData[curTab]; var cats2=Object.keys(data2); var catI=cats2.indexOf(cat); var id = 'inline-'+catI;
+  var el = document.getElementById(id);
+  if (!el) return;
+  if (openInline && openInline !== id) {
+    var prev = document.getElementById(openInline);
+    if (prev) prev.style.display = 'none';
+  }
+  if (el.style.display === 'none') {
+    el.style.display = 'flex';
+    openInline = id;
+    setTimeout(function(){ el.querySelector('input').focus(); }, 100);
+  } else {
+    el.style.display = 'none';
+    openInline = null;
+  }
+}
+function saveInlineItem(cat, inp) {
+  var nm = inp.value.trim(); if (!nm) return;
+  var d = JSON.parse(JSON.stringify(allData[curTab]));
+  if (!d[cat]) d[cat] = [];
+  if (d[cat].indexOf(nm) !== -1) { toast('"'+nm+'" gibt es schon!','info'); return; }
+  d[cat].push(nm); d[cat].sort(function(a,b){return a.localeCompare(b,'de');});
+  saveDataFB(curTab, d);
+  inp.value = '';
+  toast('"'+nm+'" dauerhaft gespeichert ✓');
+}
+
+// ====================== INIT ======================
+document.getElementById('edit-btn').style.display='';
+renderAuswahl();
+</script>
+</body>
+</html>
