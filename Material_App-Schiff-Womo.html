@@ -255,22 +255,8 @@
   </button>
 </div>
 
-<!-- Firebase Compat SDK -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-
 <script>
-// Firebase Init
-firebase.initializeApp({
-  apiKey: "AIzaSyBUHOr2dM2H-sUnhNODoVSerM224vPsC_E",
-  authDomain: "einkaufsliste-98199.firebaseapp.com",
-  databaseURL: "https://einkaufsliste-98199-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "einkaufsliste-98199",
-  storageBucket: "einkaufsliste-98199.firebasestorage.app",
-  messagingSenderId: "411877213047",
-  appId: "1:411877213047:web:f04e3b9b98a8d97120d772"
-});
-var db = firebase.database();
+// ====================== LOCAL STORAGE ======================
 
 // ====================== DEFAULT DATA ======================
 var DEF_LM = {
@@ -338,28 +324,33 @@ var allData = {
 };
 var liste = [];
 
-// ====================== FIREBASE LISTENERS ======================
-db.ref('liste').on('value', function(snap){
-  liste = snap.val() ? Object.values(snap.val()) : [];
+// ====================== LOCALSTORAGE INIT ======================
+var LS_PREFIX = 'schiff_womo_';
+
+(function initFromStorage(){
+  var savedListe = localStorage.getItem(LS_PREFIX + 'liste');
+  liste = savedListe ? JSON.parse(savedListe) : [];
+  Object.keys(TAB_KEYS).forEach(function(tab){
+    var saved = localStorage.getItem(LS_PREFIX + TAB_KEYS[tab]);
+    if(saved){ allData[tab] = JSON.parse(saved); }
+  });
+  document.getElementById('sync-dot').className = 'online';
+  document.getElementById('sync-text').textContent = 'Lokal gespeichert ✓';
+  renderAuswahl();
+  updateBadge();
+})();
+
+function saveListeFB(l){
+  liste = l;
+  localStorage.setItem(LS_PREFIX + 'liste', JSON.stringify(l));
   if(curTab==='liste') renderListe(); else renderAuswahl();
   updateBadge();
-  setSync(true);
-}, function(){ setSync(false); });
-
-Object.keys(TAB_KEYS).forEach(function(tab){
-  var key = TAB_KEYS[tab];
-  db.ref(key).on('value', function(snap){
-    if(snap.val()){ allData[tab]=snap.val(); if(curTab===tab) renderAuswahl(); }
-    else db.ref(key).set(TAB_DEFAULTS[tab]);
-  });
-});
-
-function setSync(ok){
-  document.getElementById('sync-dot').className = ok?'online':'';
-  document.getElementById('sync-text').textContent = ok?'Echtzeit-Sync aktiv ✓':'Offline…';
 }
-function saveListeFB(l){ liste=l; var o={}; l.forEach(function(i){o[i.id]=i;}); db.ref('liste').set(o); }
-function saveDataFB(tab, d){ allData[tab]=d; db.ref(TAB_KEYS[tab]).set(d); }
+function saveDataFB(tab, d){
+  allData[tab] = d;
+  localStorage.setItem(LS_PREFIX + TAB_KEYS[tab], JSON.stringify(d));
+  if(curTab===tab) renderAuswahl();
+}
 
 // ====================== TOAST ======================
 var tt;
@@ -563,7 +554,6 @@ function saveInlineItem(cat, inp) {
 
 // ====================== INIT ======================
 document.getElementById('edit-btn').style.display='';
-renderAuswahl();
 </script>
 </body>
 </html>
